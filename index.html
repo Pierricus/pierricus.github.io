@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f7dfd3b834.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Portfolio Pierrig Le Bournault</title>
+</head>
+
+<body>
+  <header>
+    <nav id="menuRes" class="menu">
+      <span>Pierrig Le Bournault</span>
+      <a href="#profil" class="active">Accueil</a>
+      <a href="#edito">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="toogleResponsive()" aria-label="menu burger">
+        <em class="fa fa-bars"></em>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section id="profil">
+      <a href="Images/test.png"><img id="photo" src="Images/test.png" width=10 height=10 title="Moi même"
+          alt="Ma photo"></a>
+    </section>
+    <section id="edito">
+      <div class="carre_texte">
+        <p>
+          Bonjour,<br>
+          Je m'appelle Pierrig Le Bournault. je suis actuellement en deuxième année en Bachelor Digital & Stratégie
+          d'entreprise au sein de l'EPF Ecole D'ingénieur.<br>
+        </p>
+      </div>
+      <div class="diapo" style="max-width:500px">
+        <img class="mySlides" src="Images/EPF.jpg" style="width:100%" alt="slide1">
+        <img class="mySlides" src="Images/EPF1.jpg" style="width:100%" alt="slide2">
+        <img class="mySlides" src="Images/EPF2.jpg" style="width:100%" alt="slide3">
+      </div>
+    </section>
+    <section id="projets">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Jeu de Bataille Navale</h2>
+          </div>
+          <div class="flip-box-back">
+            <h2>J'ai produit un petit jeu de bataille navale sous python.<br>
+              Le jeu se joue dans la console de l'IDE.
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Bot Discord</h2>
+          </div>
+          <div class="flip-box-back">
+            <h2>J'ai réalisé un Bot Discord assez basique. Il lit les messages envoyés dans un serveur et répond en
+              conséquence.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Match 4</h2>
+          </div>
+          <div class="flip-box-back">
+            <h2>J'ai réalisé un jeu de Match 4 sous Java avec interface graphique. Le jeu possède plusieurs
+              difficultées, à changer selon votre éxpérience de jeu..</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Robot</h2>
+          </div>
+          <div class="flip-box-back">
+            <h2>J'ai participé à la réalisationd'un Robot contrôlable par IR, Bluetooth ou commandes vocales sous
+              Arduino.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Visualisation de données sous Power BI</h2>
+          </div>
+          <div class="flip-box-back">
+            <h2>Nous avons crées un affichage sous Power BI permettant de visualiser différents indicateurs de la
+              consommation d'énérgie en France</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Jeu Vidéo</h2>
+          </div>
+          <div class="flip-box-back">
+            <h2>Création d'un jeu vidéo.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 id="nouscontact">ME CONTACTER</h2>
+      <div class="rec">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="nom">Nom</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nom" name="nom" placeholder="Votre Nom..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="prenom">Prénom</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="prenom" name="prenom" placeholder="Votre Prénom..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="nom">Entreprise</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="ent" name="ent" placeholder="Entreprise..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="nom">Mail</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="mail" name="mail" placeholder="Votre Mail..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="sujet">Sujet</label>
+            </div>
+            <div class="col-75">
+              <textarea id="sujet" name="sujet" placeholder="Ecrivez ici.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Envoyer">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/pierrig-le-bournault-b52a791b6/" target="_blank" aria-label="linkedin">
+      <em class="fa-brands fa-linkedin fa-3x"></em>
+    </a>
+    <a href="https://github.com/Pierricus/Portfolio" target="_blank" aria-label="github">
+      <em class="fa-brands fa-github fa-3x"></em>
+    </a>
+    <a href="https://www.facebook.com/Pierricus" target="_blank" aria-label="facebook">
+      <em class="fa-brands fa-facebook fa-3x"></em>
+    </a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
